@@ -5,7 +5,7 @@
   --secondary: hsl(244, 38%, 16%);
   --accent: hsl(277, 64%, 61%);
   --neutral-white: hsla(0, 0%, 100%, 0.75);
-  --neutral-transparent-white: hsla(0, 0%, 100%, 0.6);
+  --neutral-transparent-white: hsla(0, 0%, 100%, 0.5);
   --main-font: 'Inter', serif;
   --secondary-font: 'Lexend Deca', sans-serif;
 }
@@ -79,11 +79,31 @@ img {
 }
 
 .header__title {
-  font-size: 1.5rem;
-  margin-bottom: 1rem;
-  padding-inline: 2rem;
+  font-size: 1.6rem;
+  padding-inline: 1rem;
 }
 
 .header__title span {
   color: var(--accent);
+}
+
+.main__text {
+  padding: 1rem;
+  line-height: 1.5;
+  color: var(--neutral-transparent-white);
+}
+
+.stats {
+  padding-bottom: 1rem;
+}
+
+.stats__item {
+  padding-block: 1rem;
+}
+
+.stats__item__text {
+  font-size: 0.75rem;
+  font-family: var(--secondary-font);
+  letter-spacing: 1px; /* espaciado entre las letras */
+  color: var(--neutral-transparent-white);
 }
