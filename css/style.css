@@ -128,6 +128,10 @@ img {
   }
 }
 
+.main {
+  padding-inline: 2rem;
+}
+
 @media (min-width: 1200px) {
   .main {
     width: 50%;
@@ -141,7 +145,6 @@ img {
 
 .main__title {
   font-size: 1.6rem;
-  padding-inline: 1rem;
 }
 
 @media (min-width: 1200px) {
@@ -155,11 +158,10 @@ img {
 }
 
 .main__text {
-  padding: 1rem;
+  padding: 1rem 0;
   line-height: 1.5;
   color: var(--neutral-transparent-white);
 }
-
 
 .stats {
   padding-bottom: 1rem;
@@ -169,6 +171,7 @@ img {
   .stats {
     display: flex;
     justify-content: space-between;
+    padding-bottom: 0;
   }
 }
 
