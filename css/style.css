@@ -3,6 +3,7 @@
 :root {
   --primary: hsl(233, 47%, 7%);
   --secondary: hsl(244, 38%, 16%);
+  --accent: hsl(277, 64%, 61%);
   --neutral-white: hsla(0, 0%, 100%, 0.75);
   --neutral-transparent-white: hsla(0, 0%, 100%, 0.6);
   --main-font: 'Inter', serif;
@@ -31,3 +32,58 @@
 /***********/
 /* MY CODE */
 /***********/
+
+.--position-relative {
+  position: relative;
+}
+
+body {
+  background-color: var(--primary);
+  height: 100vh;
+  font-family: var(--main-font);
+  color: var(--neutral-white);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.938rem; /* 15px */
+}
+
+img {
+  width: 100%;
+}
+
+.container {
+  width: 300px;
+  margin: auto;
+  background-color: var(--secondary);
+  text-align: center;
+  border-radius: 0.5rem;
+}
+
+.header__image {
+  border-radius: 0.5rem 0.5rem 0 0;
+  display: block; /* para eliminar el espacio con el efecto transparente debajo de la imagen */
+  margin-bottom: 2rem;
+}
+
+.header__image__overlay {
+  background-color: var(--accent);
+  opacity: 0.6;
+  border-radius: 0.5rem 0.5rem 0 0;
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.header__title {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  padding-inline: 2rem;
+}
+
+.header__title span {
+  color: var(--accent);
+}
