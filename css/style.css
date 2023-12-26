@@ -64,7 +64,7 @@ img {
 .header__image {
   border-radius: 0.5rem 0.5rem 0 0;
   display: block; /* para eliminar el espacio con el efecto transparente debajo de la imagen */
-  margin-bottom: 2rem;
+  margin-bottom: 2.5rem;
 }
 
 .header__image__overlay {
@@ -106,4 +106,5 @@ img {
   font-family: var(--secondary-font);
   letter-spacing: 1px; /* espaciado entre las letras */
   color: var(--neutral-transparent-white);
+  margin-top: 0.5rem;
 }
