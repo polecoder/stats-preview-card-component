@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap');
+
+:root {
+  --primary: hsl(233, 47%, 7%);
+  --secondary: hsl(244, 38%, 16%);
+  --neutral-white: hsla(0, 0%, 100%, 0.75);
+  --neutral-transparent-white: hsla(0, 0%, 100%, 0.6);
+  --main-font: 'Inter', serif;
+  --secondary-font: 'Lexend Deca', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/***********/
+/* DEFAULT */
+/***********/
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+/***********/
+/* MY CODE */
+/***********/
