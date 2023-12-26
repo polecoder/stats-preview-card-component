@@ -54,20 +54,64 @@ img {
 }
 
 .container {
-  width: 300px;
+  width: 325px;
   margin: auto;
   background-color: var(--secondary);
   text-align: center;
   border-radius: 0.5rem;
 }
 
-.header__image {
+@media (min-width: 576px) {
+  .container {
+    width: 450px;
+  }  
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 525px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    width: 1050px;
+    display: flex;
+    flex-direction: row-reverse;
+    text-align: left;
+  }
+}
+
+@media (min-width: 1200px) {
+  .image-container {
+    width: 50%;
+  }
+}
+
+.image-container__mobile {
   border-radius: 0.5rem 0.5rem 0 0;
   display: block; /* para eliminar el espacio con el efecto transparente debajo de la imagen */
   margin-bottom: 2.5rem;
 }
 
-.header__image__overlay {
+@media (min-width: 1200px) {
+  .image-container__mobile {
+    display: none;
+  }
+}
+
+.image-container__desktop {
+  display: none;
+}
+
+@media (min-width: 1200px) {
+  .image-container__desktop {
+    display: block;
+    border-radius: 0 0.5rem 0.5rem 0;
+  }
+}
+
+.image-container__overlay {
   background-color: var(--accent);
   opacity: 0.6;
   border-radius: 0.5rem 0.5rem 0 0;
@@ -78,12 +122,35 @@ img {
   height: 100%;
 }
 
-.header__title {
+@media (min-width: 1200px) {
+  .image-container__overlay {
+    border-radius: 0 0.5rem 0.5rem 0;
+  }
+}
+
+@media (min-width: 1200px) {
+  .main {
+    width: 50%;
+    padding: 3rem;
+    padding-right: 6rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+}
+
+.main__title {
   font-size: 1.6rem;
   padding-inline: 1rem;
 }
 
-.header__title span {
+@media (min-width: 1200px) {
+  .main__title {
+    font-size: 2rem;
+  }
+}
+
+.main__title span {
   color: var(--accent);
 }
 
@@ -93,12 +160,20 @@ img {
   color: var(--neutral-transparent-white);
 }
 
+
 .stats {
   padding-bottom: 1rem;
 }
 
+@media (min-width: 1200px) {
+  .stats {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
 .stats__item {
-  padding-block: 1rem;
+  padding: 1rem;
 }
 
 .stats__item__text {
